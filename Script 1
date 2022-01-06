@@ -1,0 +1,15 @@
+local UserInputService = game:GetService("UserInputService")
+local Character = script.Parent
+local humanoid = Character:WaitForChild("Humanoid")
+
+UserInputService.InputBegan:Connect(function(key, chatting)
+ if key.KeyCode == Enum.KeyCode.R then
+  if chatting then return 
+   
+  else
+   humanoid.Health = 0
+  end
+  
+  
+ end
+end)
